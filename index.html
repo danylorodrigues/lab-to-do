@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas - Scrum</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Lista de Tarefas</h1>
+
+    <form id="taskForm" class="add-form">
+      <input id="taskInput" type="text" placeholder="Digite uma tarefa..." maxlength="120" required>
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <section class="summary">
+      <span id="taskCount">0 tarefas</span>
+      <span id="doneCount">0 concluídas</span>
+    </section>
+
+    <ul id="taskList"></ul>
+
+    <p id="emptyMessage" class="empty">Nenhuma tarefa cadastrada.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
